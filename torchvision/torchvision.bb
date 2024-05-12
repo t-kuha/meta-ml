@@ -6,8 +6,8 @@ SUMMARY = "torchvision"
 DESCRIPTION = "Datasets, Transforms and Models specific to Computer Vision"
 
 # Version to use
-SRCREV = "4fd856bfbcf59a4da3a91f0e12515c7ef0709777"
-PV = "0.17.1"
+SRCREV = "6043bc250768b129e90a5321e318c1d51ee48a5c"
+PV = "0.18.0"
 PR = "r0"
 
 S = "${WORKDIR}/git"
@@ -18,7 +18,7 @@ LICENSE = "BSD-3-Clause"
 LIC_FILES_CHKSUM = "file://${S}/LICENSE;md5=bd7749a3307486a4d4bfefbc81c8b796"
 
 SRC_URI = " \
-    git://github.com/pytorch/vision.git;protocol=https;branch=release/0.17 \
+    git://github.com/pytorch/vision.git;protocol=https;branch=release/0.18 \
     file://0001-Add-support-for-Yocto-build.patch \
 "
 
