@@ -6,8 +6,8 @@ SUMMARY = "PyTorch"
 DESCRIPTION = "Tensors and Dynamic neural networks in Python with strong GPU acceleration"
 
 # Version to use
-SRCREV = "6c8c5ad5eaf47a62fafbb4a2747198cbffbf1ff0"
-PV = "2.2.1"
+SRCREV = "97ff6cfd9c86c5c09d7ce775ab64ec5c99230f5d"
+PV = "2.3.0"
 PR = "r0"
 
 S = "${WORKDIR}/git"
@@ -19,7 +19,7 @@ LIC_FILES_CHKSUM = "file://${S}/LICENSE;md5=5c853508d63a8090fa952ff1af58217d"
 
 # "gitsm" not working?
 SRC_URI = " \
-    git://github.com/pytorch/pytorch.git;protocol=https;branch=release/2.2 \
+    git://github.com/pytorch/pytorch.git;protocol=https;branch=release/2.3 \
     file://0001-Add-support-for-Yocto-build.patch \
 "
 
