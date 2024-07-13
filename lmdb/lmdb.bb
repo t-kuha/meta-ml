@@ -13,8 +13,8 @@ LICENSE = "OpenLDAP"
 LIC_FILES_CHKSUM = "file://${S}/LICENSE;md5=153d07ef052c4a37a8fac23bc6031972"
 
 # LMDB version to use
-SRCREV = "8ad7be2510414b9506ec9f9e24f24d04d9b04a1a"
-SRCPV = "0.9.29"
+SRCREV = "ce201088de95d26fc0da36ba805bf2ddc2ba74ff"
+SRCPV = "0.9.31"
 PR = "r0"
 
 SRC_URI = "\

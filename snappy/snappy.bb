@@ -11,8 +11,8 @@ LICENSE = "BSD-3-Clause"
 LIC_FILES_CHKSUM = "file://${S}/COPYING;md5=f62f3080324a97b3159a7a7e61812d0c"
 
 # Snappy version to use
-SRCREV = "dc05e026488865bc69313a68bcc03ef2e4ea8e83"
-PV = "1.1.10"
+SRCREV = "2c94e11145f0b7b184b831577c93e5a41c4c0346"
+PV = "1.2.1"
 PR = "r0"
 
 SRC_URI = "gitsm://github.com/google/snappy.git;protocol=https;branch=main"
