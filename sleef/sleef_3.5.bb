@@ -6,8 +6,8 @@ SUMMARY = "sleef"
 DESCRIPTION = "SIMD Library for Evaluating Elementary Functions, vectorized libm and DFT"
 
 # Version to use
-SRCREV = "a99491afee2bae0b11e9ffbf3211349f43a5fd10"
-PV = "3.6"
+SRCREV = "cc4b0213f2f57a2f7e8f6355758dc40973ae9998"
+PV = "3.5.1"
 PR = "r0"
 
 S = "${WORKDIR}/git"
