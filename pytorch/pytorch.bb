@@ -6,8 +6,8 @@ SUMMARY = "PyTorch"
 DESCRIPTION = "Tensors and Dynamic neural networks in Python with strong GPU acceleration"
 
 # Version to use
-SRCREV = "63d5e9221bedd1546b7d364b5ce4171547db12a9"
-PV = "2.3.1"
+SRCREV = "d990dada86a8ad94882b5c23e859b88c0c255bda"
+PV = "2.4.0"
 PR = "r0"
 
 S = "${WORKDIR}/git"
@@ -19,8 +19,8 @@ LIC_FILES_CHKSUM = "file://${S}/LICENSE;md5=5c853508d63a8090fa952ff1af58217d"
 
 # "gitsm" not working?
 SRC_URI = " \
-    git://github.com/pytorch/pytorch.git;protocol=https;branch=release/2.3 \
-    file://0001-Add-support-for-Yocto-build.patch \
+    git://github.com/pytorch/pytorch.git;protocol=https;branch=release/2.4 \
+    file://0003-Add-support-for-Yocto-build.patch \
 "
 
 RDEPENDS:${PN} += "protobuf gflags glog python3-numpy "
@@ -56,6 +56,7 @@ do_compile() {
     export USE_DISTRIBUTED=OFF
     export USE_NUMPY=ON
     export USE_XNNPACK=OFF
+    export USE_XPU=OFF
     export BUILD_CUSTOM_PROTOBUF=OFF
     export PYTHON_EXECUTABLE=${PYTHON}
     export CMAKE_SYSTEM_NAME=Linux
