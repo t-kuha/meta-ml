@@ -6,8 +6,8 @@ SUMMARY = "PyTorch"
 DESCRIPTION = "Tensors and Dynamic neural networks in Python with strong GPU acceleration"
 
 # Version to use
-SRCREV = "d990dada86a8ad94882b5c23e859b88c0c255bda"
-PV = "2.4.0"
+SRCREV = "ee1b6804381c57161c477caa380a840a84167676"
+PV = "2.4.1"
 PR = "r0"
 
 S = "${WORKDIR}/git"
