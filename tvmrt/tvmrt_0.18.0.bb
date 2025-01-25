@@ -20,7 +20,6 @@ LIC_FILES_CHKSUM = "file://${S}/LICENSE;md5=acf34edaf6d880cc3b205d19eda0c95c"
 SRC_URI = " \
     gitsm://github.com/apache/tvm.git;protocol=https;branch=main \
 "
-# file://0001-Add-support-for-Yocto-build.patch 
 
 DEPENDS += " \
     python3-native \
@@ -35,8 +34,7 @@ EXTRA_OECMAKE = "\
 "
 
 do_configure:prepend(){
-    echo set\(USE_LLVM OFF\) >> ${S}/config.cmake
-    # echo set\(USE_VITIS_AI ON\) >> ${S}/config.cmake
+    echo set\(USE_LLVM OFF\) > ${S}/config.cmake
 }
 
 SOLIBS = ".so"
